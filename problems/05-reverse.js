@@ -15,29 +15,29 @@ reverse(""); // ""
 
 function reverse(str) {
   debugger;
-//   if( str.length === 0){
-//     return str
-//   }
-//  if (str.length === 1){
-//    return str;
-//  }
+  if( str.length === 0){
+    return str
+  }
+ if (str.length === 1){
+   return str;
+ }
 
-// //  let last = str.length-1;
+ let last = str.length-1;
 
-// //  let word = str.slice(0,last);
-// //  let char = str[last]
-// //  const result = char + reverse(word);
-//  return result;
-if ( str.length === 0){
-  return str
-}
-if (str.length === 1){
-  return str
-}
-let first = str[0]
-let letter = str.slice(1, str.length)
-const result =reverse(letter) + first
-return result
+ let word = str.slice(0, last);
+ let char = str[last]
+ const result = char + reverse(word);
+ return result;
+// if ( str.length === 0){
+//   return str
+// }
+// if (str.length === 1){
+//   return str
+// }
+// let first = str[0]
+// let letter = str.slice(1)
+// const result =reverse(letter) + first
+// return result
 }
 
 
